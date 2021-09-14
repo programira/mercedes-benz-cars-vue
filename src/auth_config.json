@@ -1,0 +1,9 @@
+{
+    "domain": "https://id.mercedes-benz.com/as/authorization.oauth2",
+    "clientId": "67bb8b2b-82d6-434f-8dfd-cecdcdf1227a",
+    "clientSecret": "uqeNlPkovybihjVcZneuulqWGUdIhtqLmvsqmwsJXqXoxgzacpjtggqIGgTdKvdZ",
+    "token": "eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIiwiY3R5IjoiSldUIiwia2lkIjoiQ0lBTVNZTSIsInBpLmF0bSI6Imh4M2UifQ..EToItPCjwAAmqCoOl1I1Lg.S8vKBkxUGGjiH1TspwkM73TnDqWUgUxLLgZqiFKg6g_MqMQ5mBrwUHgWeOKyDzhMB_ow5l9QW5QkGK2EBzBwtRrXZEJmVpRJBQ61nlu-iJtX4OGUYQ8QVYsKZj9dbCSM-Bv7F3b6_5Nu95wOtAtSAn8KFlQW1ZQ82WdQxQdzDyyQgPjXH6xgQEzlNerItxf8cCljVQv5mz1tR5GRvGm5gPpwvtkCf5HlviAYXiex5E2NaBE7oUBHdmnm8El8TQPxoV3zQzffxH2EzFgBX-bRTsPiMXqXnSamnkWe-dgzJ0ozSHRXHR6yeQPM-T-iyvYxLvlNbftHf3j4r6z026_cW56ur6DgnLd6ZnPfL-d1POXIT_PUhkID4lFGAwVFDjis85SvltNsbX0E4isJ1LilqGHG8FF-6s91jUCuw9BjRwBIz8jSvHgnD6fc2SzHkP-dIMzUdHcoyShbje_-i5mP562K3oP6y2607zepRXpMgbJguX6796WdhvoWVq9zZy6wA0UYorzhnKHrBLjvkr8bGU7D9LM5SoXv7cefhSGMRndvQYnZusFtt8m6FwVDUC4WYP-Rf2RUjjMzWrDtTAuCQoAk1KXvLk7-aQkc302icLG0oCsl7ZkPxdbG5FuXgAKYSx0GT5lkCXy5HpUyfXHaSEd7OHqywpIaEkGy4S27nHt84z5zkRZfHPQgVIbbqFYtBe2PagZvscvkfJ8OBq1RFwsfDf_A0ci9u0OeiSaWIELRtLR1fa7EWd6PUtNzIy89ztT-barB9n3BEaDJovLb8SX9woLghzR2I4xkNFeoyt104jWvfFtYZeC-7lLfKFHSYGgi3m9r8332wlKQu-fTUuD79CT7hgzYbaUA7zr18R0vOF7fueWAilVZU5dJtDIJ9_VI1cSgASwn83CrTP3dkg.wjLYGJTbPWPb6QjqIbA2cQvInfSHZWWvoA2v0pZlEew",
+    "authUrl": "https://id.mercedes-benz.com/as/authorization.oauth2",
+    "accessTokenUrl": "https://id.mercedes-benz.com/as/token.oauth2",
+    "scope": "mb:user:pool:reader"
+  }

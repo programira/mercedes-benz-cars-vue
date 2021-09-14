@@ -10,19 +10,13 @@
           alt="Vuetify Logo"
           class="shrink mr-2"
           contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+          src="https://adpearance.com/wp-content/uploads/2021/05/mercedes-benz-white-logo.png"
           transition="scale-transition"
-          width="40"
+          width="200"
         />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
+      </div>
+      <div class="mt-1 ml-3">
+        Connected Vehicle Service
       </div>
 
       <v-spacer></v-spacer>
