@@ -35,14 +35,6 @@ export default Vue.extend({
 
   data: () => ({
     alignments: ["left", "rigth"],
-    computed: {
-      cars() {
-        // return this.$store.state.posts
-      },
-    },
-    mounted() {
-      //this.$store.dispatch("getCars");
-    },
   }),
 });
 </script>

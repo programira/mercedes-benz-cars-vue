@@ -40,9 +40,7 @@ export default Vue.extend({
 
   data: () => ({
     computed: {
-    cars() {
-    // return this.$store.state.carDetails
-    }
+
   },
   mounted() {
     //this.$store.dispatch("getCarDetails");

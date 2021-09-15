@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import axios from 'axios'
+import cars from './modules/cars'
 
 import { Locales } from '@/i18n/locales'
 import { defaultLocale } from '@/i18n'
@@ -8,6 +8,9 @@ import { defaultLocale } from '@/i18n'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
+  modules: {
+    cars
+  },
   state: {
     cars: [],
     token: localStorage.getItem('token') || '',
@@ -21,14 +24,5 @@ export default new Vuex.Store({
       state.language = payload
     }
   },
-  actions: {
-    getCars({ commit }) {
-      axios.get('https://jsonplaceholder.typicode.com/posts') // zameni link i vidi za token
-          .then(response => {
-              commit('SET_CARS', response.data)
-      })
-  }
-  },
-  modules: {
-  }
+
 })

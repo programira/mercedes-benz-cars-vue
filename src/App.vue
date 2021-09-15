@@ -1,10 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
+    <v-app-bar app color="primary" dark>
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
@@ -15,26 +11,12 @@
           width="200"
         />
       </div>
-      <div class="mt-1 ml-3 d-none d-md-block">
-        Connected Vehicle Service
-      </div>
+      <div class="mt-1 ml-3 d-none d-md-block">Connected Vehicle Service</div>
 
       <v-spacer></v-spacer>
 
-      <!-- <select
-      v-model="$i18n.locale"
-      @change="updateLanguage($event.target.value)"
-    >
-      <option
-        v-for="(o, i) in LOCALES"
-        :key="i"
-        :value="o.value"
-        :selected="o.value === defaultLocale"
-        >{{ o.caption }}</option
-      >
-    </select> -->
-    <div class="col-3 mt-3">
-     <v-select
+      <div class="col-3 mt-3">
+        <v-select
           v-model="select"
           :items="items"
           item-text="language"
@@ -44,36 +26,36 @@
           return-object
           single-line
         ></v-select>
-    </div>
+      </div>
     </v-app-bar>
 
     <v-main>
-      <router-view/>
+      <router-view />
     </v-main>
   </v-app>
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import { LOCALES, Locales  } from "@/i18n/locales";
+import Vue from "vue";
+import { LOCALES, Locales } from "@/i18n/locales";
 import { defaultLocale } from "@/i18n";
 
 export default Vue.extend({
-  name: 'App',
+  name: "App",
 
   data: () => ({
-    LOCALES, 
+    LOCALES,
     defaultLocale,
-     select: { language: 'English', abbr: 'EN' },
-        items: [
-          { language: 'English', abbr: 'EN' },
-          { language: 'German', abbr: 'DE' },
-        ],
+    select: { language: "English", abbr: "EN" },
+    items: [
+      { language: "English", abbr: "EN" },
+      { language: "German", abbr: "DE" },
+    ],
   }),
   methods: {
     updateLanguage(lang: Locales) {
       this.$store.commit("SET_LANGUAGE", lang);
-    }
-  }
+    },
+  },
 });
 </script>
