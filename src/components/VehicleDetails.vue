@@ -9,19 +9,19 @@
       <v-expansion-panel>
         <v-expansion-panel-header>Tires Status</v-expansion-panel-header>
         <v-expansion-panel-content>
-          Get Tires Status taabela
+          <tires-status />
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-expansion-panel>
         <v-expansion-panel-header>Vehicle Location</v-expansion-panel-header>
         <v-expansion-panel-content>
-          Get Current Location of the vehicle
+          <location/>
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-expansion-panel>
-        <v-expansion-panel-header>Fules</v-expansion-panel-header>
+        <v-expansion-panel-header>Fuel</v-expansion-panel-header>
         <v-expansion-panel-content>
-          Get Fuel
+          <fuel />
         </v-expansion-panel-content>
       </v-expansion-panel>
     </v-expansion-panels>
@@ -30,9 +30,12 @@
 <script lang="ts">
 import Vue from "vue";
 import CarInfo from "./info/CarInfo.vue";
+import TiresStatus from "./info/TiresStatus.vue";
+import Location from "./info/Location.vue";
+import Fuel from "./info/Fuel.vue";
 
 export default Vue.extend({
-  components: { CarInfo },
+  components: { CarInfo, TiresStatus, Location, Fuel },
   name: "VehicleDetails",
 
   data: () => ({

@@ -15,20 +15,36 @@
           width="200"
         />
       </div>
-      <div class="mt-1 ml-3">
+      <div class="mt-1 ml-3 d-none d-md-block">
         Connected Vehicle Service
       </div>
 
       <v-spacer></v-spacer>
 
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
+      <!-- <select
+      v-model="$i18n.locale"
+      @change="updateLanguage($event.target.value)"
+    >
+      <option
+        v-for="(o, i) in LOCALES"
+        :key="i"
+        :value="o.value"
+        :selected="o.value === defaultLocale"
+        >{{ o.caption }}</option
       >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
+    </select> -->
+    <div class="col-3 mt-3">
+     <v-select
+          v-model="select"
+          :items="items"
+          item-text="language"
+          item-value="abbr"
+          label="Select"
+          persistent-hint
+          return-object
+          single-line
+        ></v-select>
+    </div>
     </v-app-bar>
 
     <v-main>
@@ -39,12 +55,25 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import { LOCALES, Locales  } from "@/i18n/locales";
+import { defaultLocale } from "@/i18n";
 
 export default Vue.extend({
   name: 'App',
 
   data: () => ({
-    //
+    LOCALES, 
+    defaultLocale,
+     select: { language: 'English', abbr: 'EN' },
+        items: [
+          { language: 'English', abbr: 'EN' },
+          { language: 'German', abbr: 'DE' },
+        ],
   }),
+  methods: {
+    updateLanguage(lang: Locales) {
+      this.$store.commit("SET_LANGUAGE", lang);
+    }
+  }
 });
 </script>

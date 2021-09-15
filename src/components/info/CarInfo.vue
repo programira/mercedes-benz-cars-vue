@@ -1,18 +1,8 @@
 <template>
   <v-card>
-    <v-card-title>
-      <v-text-field
-        v-model="search"
-        append-icon="mdi-magnify"
-        label="Search"
-        single-line
-        hide-details
-      ></v-text-field>
-    </v-card-title>
     <v-data-table
       :headers="headers"
-      :items="cars"
-      :search="search"
+      :items="info"
     ></v-data-table>
   </v-card>
 </template>
@@ -24,7 +14,7 @@ export default Vue.extend({
   name: "VehicleDetails",
 
   data: () => ({
-      search: '',
+
         headers: [
           {
             text: 'About',
@@ -34,19 +24,41 @@ export default Vue.extend({
           },
           { text: 'Value', value: 'value' },
         ],
-        cars: [
+        info: [
           {
-            name: 'licenseplate',
+            name: 'License plate',
             value: 159,
           },
           {
-            name: 'salesdesignation',
+            name: 'Sales designation',
             value: 'E 400 4MATIC Limousine',
+          },
+          {
+            name: 'Nickname',
+            value: 'E 400 4MATIC Limousine',
+          },
+          {
+            name: 'Model Year',
+            value: '2017',
+          },
+          {
+            name: 'Color',
+            value: 'Iridiumsilber metallic',
+          },
+          {
+            name: 'Fuel type',
+            value: 'Mmueller',
+          },
+          {
+            name: 'Powerhp',
+            value: '333',
+          },
+          {
+            name: 'Number of doors',
+            value: '5',
           },
 
         ],
-
-
   }),
 });
 </script>

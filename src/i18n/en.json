@@ -1,0 +1,12 @@
+{
+    "titles": {
+        "main": "Connected Vehicle Service",
+        "availableCarsTitle": "Available Cars"
+    },
+    "table": {
+        "carInfo": "Car Info",
+        "tiresStatus": "Tires Status",
+        "vehicleLocation": "Vehicle Location", 
+        "fuel": "Fuel"
+    }
+}

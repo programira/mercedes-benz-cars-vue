@@ -1,0 +1,12 @@
+{
+    "titles": {
+        "main": "Dienst für vernetzte Fahrzeuge",
+        "availableCarsTitle": "Verfügbare Autos"
+    },
+    "table": {
+        "carInfo": "Autoinfo",
+        "tiresStatus": "Reifenstatus",
+        "vehicleLocation": "Fahrzeugstandort", 
+        "fuel": "Kraftstoff"
+    }
+}

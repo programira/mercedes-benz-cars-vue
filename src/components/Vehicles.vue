@@ -27,7 +27,6 @@ export default Vue.extend({
     selectedCar: 1,
       cars: [
         { licenseplate: 'S-GG-1236', },
-        { licenseplate: 'S-AA-5555' },
       ],
       computed: {
     cars() {

@@ -1,19 +1,18 @@
 <template>
   <div>
-    <v-container>
-      <v-row class="text-center">
-      </v-row>
+    <v-container class="grid-list-sm">
+      <v-row class="text-center"> </v-row>
     </v-container>
-    <v-container class="grey lighten-5 mb-6">
-      <v-row no-gutters style="height: 150px">
-        <v-col cols="6" class="p-3">
-          <vehicles/>
-          <vehicle-display/>
+    <v-container class="grey lighten-5 mb-6 grid-list-sm">
+      <v-row style="height: 150px">
+        <v-col cols="12" class="p-3 col-sm-6">
+          <vehicles />
+          <vehicle-display />
         </v-col>
-        <v-col cols="6">
+        <v-col cols="12" class="col-sm-6">
           <v-row justify="center">
-    <vehicle-details/>
-  </v-row>
+            <vehicle-details />
+          </v-row>
         </v-col>
       </v-row>
     </v-container>
@@ -31,20 +30,19 @@ export default Vue.extend({
   components: {
     Vehicles,
     VehicleDetails,
-    VehicleDisplay
+    VehicleDisplay,
   },
 
   data: () => ({
     alignments: ["left", "rigth"],
-      computed: {
-    cars() {
-    // return this.$store.state.posts
-    }
-  },
-  mounted() {
-    //this.$store.dispatch("getCars");
-  }
-
+    computed: {
+      cars() {
+        // return this.$store.state.posts
+      },
+    },
+    mounted() {
+      //this.$store.dispatch("getCars");
+    },
   }),
 });
 </script>
